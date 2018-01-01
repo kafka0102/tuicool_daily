@@ -1,0 +1,64 @@
+/**index.wxss**/
+
+.clearfix {
+  clear: both;
+}
+.daily_header {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.daily_header .title {
+   margin-left: 16px;
+    float:left;
+}
+
+.daily_header .calendar {
+   float:right;
+   margin-right: 12px;
+}
+
+.daily_header .calendar image{
+  width: 30px;
+  height: 30px;
+}
+
+.article_item {
+  padding-left: 12px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.article_meta {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.article_meta .title {
+  font-size: 17px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 55px;
+}
+
+.article_meta .feed_title {
+  font-size: 14px;
+  color: #999;
+}
+
+.article_image {
+  float: left;
+  margin-right:10px;
+}
+
+.article_image .image {
+  width: 100px;
+  height: 80px;
+  margin-top:5px;
+}

@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+@import "wxParse/wxParse.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.error {
+  margin: 0 auto;
+  text-align: center;	
+  padding-top: 200px;
+}

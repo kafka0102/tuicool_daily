@@ -1,0 +1,20 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view wx:if="{{!isLoading}}">
+<view class="article" wx:if="{{isSuccess}}">
+  <view class="title">{{article.title}}</view>
+  <view class='meta'>
+   <view class="feed_title">{{article.feed_title}}</view>
+   <view class="time">{{article.time}}</view>
+  </view>
+  <view class="content">
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+  </view>
+</view>
+<view wx:else>
+  <view class='error'>
+  {{error}}
+  </view>
+</view>
+</view>
+
+
