@@ -1,12 +1,12 @@
 <!--index.wxml-->
 <view wx:if="{{!isLoading}}">
+  <view class="daily_header">
+    <view class='title'>{{title}}</view>
+    <picker mode="date" value="{{date}}" start="2017-09-01" end="{{end_date}}" bindchange="clickChooseDate" class='calendar'>
+      <image src='../../images/calendar.png'></image>
+    </picker>
+  </view>
   <view wx:if="{{items.length != 0}}">
-        <view class="daily_header">
-          <view class='title'>{{title}}</view>
-          <picker mode="date" value="{{date}}" start="2017-09-01" end="{{end_date}}" bindchange="clickChooseDate" class='calendar'>
-            <image src='../../images/calendar.png'></image>
-          </picker>
-        </view>
         <block wx:for="{{items}}" wx:for-item="item" wx:key="id">
           <view class="article_item" bindtap="clickArticleDetail" id="{{item.id}}">
             <view class="article_image">
