@@ -35,6 +35,7 @@ Page({
       });
       if (res.data.success) {
         that.setData({
+          error: '',
           items: res.data.items,
           title: res.data.title,
           date: util.formatDate(new Date(res.data.time*1000), "yyyy-MM-dd")
